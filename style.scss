@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 90%;
+    margin: 3rem auto;
+}
+.header{
+    border-bottom: 1px solid gray;
+}
+.menu{
+display: flex;
+justify-content: space-between;
+}

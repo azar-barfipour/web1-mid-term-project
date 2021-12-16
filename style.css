@@ -9,6 +9,21 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.backdrop {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+
+.show {
+  display: block;
+}
+
 .header {
   border-bottom: 1px solid #f7f8fd;
 }
@@ -30,12 +45,6 @@
 
 .nav__list {
   display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-color: white;
-  width: 60%;
-  height: 100vh;
 }
 
 .nav__item {
@@ -46,6 +55,13 @@
 
 .nav__list--show {
   display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 60%;
+  height: 100vh;
+  z-index: 200;
 }
 
 .main {

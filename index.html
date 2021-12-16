@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | E-commerce product page</title>
  <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +13,10 @@
     <nav class="nav">
       <section class="menu">
         <h1 class="menu__title">Sneakers</h1>
+        <div class="menu__container">
+        <button class="button">
+          <img src="./images/icon-menu.svg" alt="menu">
+        </button>
         <ul class="nav__list">
           <li class="nav__item">Collections</li>
           <li class="nav__item">Men</li>
@@ -21,12 +24,28 @@
           <li class="nav__item">About</li>
           <li class="nav__item">Contact</li>
         </ul>
+      </div>
       </section>
       <section class="card">
       </section>
     </nav>
   </header>
-  <main class="main"></main>
-
+  <main class="main">
+    <section class="img-wrapper">
+    <img src="./images/image-product-1.jpg" alt="product" class="img__photo">
+  </section>
+  <section class="text-wrapper">
+    <p class="text__title">SNEAKER COMPANY</p>
+    <h2 class="text__header">Fall Limited Edition Sneakers</h2>
+    <p class="text__desc">These low-profile Sneakers are your perfect casual wear companion. Featuring a durable ruber outer sole, they'll withstand everything the weather can offer</p>
+    <div class="price-wrapper">
+      <h3>$125.00</h3>
+      <p class="disscount">50%</p>
+      <p class="price">250.00</p>
+    </div>
+    <button class="submit" type="submit">Add to card</button>
+  </section>
+  </main>
+<script src="./script.js"></script>
 </body>
 </html>

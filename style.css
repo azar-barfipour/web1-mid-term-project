@@ -30,6 +30,12 @@
 
 .nav__list {
   display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 60%;
+  height: 100vh;
 }
 
 .nav__item {

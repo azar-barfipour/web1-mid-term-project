@@ -5,7 +5,6 @@ $colors : (main: hsl(0, 0%, 100%),Orange: hsl(26, 100%, 55%),Pale: hsl(25, 100%,
     box-sizing: border-box;
 }
 .body{
-    // width: 90%;
     background-color: map-get($colors,main);
     font-family: 'Kumbh Sans', sans-serif;
 }
@@ -27,6 +26,12 @@ align-items: center;
 }
 .nav__list{
 display: none;
+position: absolute;
+left:0;
+top:0;
+background-color: white;
+width: 60%;
+height: 100vh;
  }
  .nav__item{
     list-style: none;

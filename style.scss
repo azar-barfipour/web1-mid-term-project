@@ -7,7 +7,7 @@ $colors : (main: hsl(0, 0%, 100%),Orange: hsl(26, 100%, 55%),Pale: hsl(25, 100%,
 .body{
     // width: 90%;
     background-color: map-get($colors,main);
-    font-family: [Kumbh Sans];
+    font-family: 'Kumbh Sans', sans-serif;
 }
 .header{
     border-bottom: 1px solid hsl(223, 64%, 98%);
@@ -22,14 +22,22 @@ align-items: center;
 .button{
     padding: .5rem;
     border: none;
-    background-color: map-get($colors,main);
+    background-color:  map-get($colors,main);
     cursor: pointer;
 }
 .nav__list{
 display: none;
  }
+ .nav__item{
+    list-style: none;
+    color: darken(map-get($colors , main),60%);
+    padding: 1rem;
+  }
  .nav__list--show{
 display: block;
+ }
+ .main{
+     max-width: 45rem;
  }
  .img__photo{
      width: 100%;
@@ -50,7 +58,7 @@ display: block;
  }
  .price-wrapper{
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
  }
  .disscount{
@@ -73,21 +81,31 @@ display: block;
  }
 
 
- @media (min-width: 670px) {
+ @media (min-width: 40rem) {
    .main{
        display: flex;
-       justify-content: space-between;
        align-items: center;
        width: 80%;
        margin: 2rem auto;
    }
+   .img-wrapper{
+       width: 50%;
+   }
    .img__photo{
-    width: 90%;
-    height: 35vh;
+    height: 50vh;
     border-radius: .3rem;
+}
+.text-wrapper{
+    width: 35%;
 }
 .price-wrapper{
     justify-content: space-around;
 }
+.button{
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+  }
   }
 
